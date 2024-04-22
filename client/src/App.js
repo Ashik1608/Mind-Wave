@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./scenes/homepage";
 import LoginPage from "./scenes/loginpage";
 import ProfilePage from "./scenes/profilepage";
+import voicechat from "./scenes/voicechat";
 import { useMemo } from "react";
 import { useSelector } from "react-redux";
 import { CssBaseline, ThemeProvider } from "@mui/material";
@@ -20,6 +21,8 @@ function App() {
             <Route path="/" element={<LoginPage />} />
             <Route path="/home" element={<HomePage />} />
             <Route path="/profile/:userId" element={<ProfilePage />} />
+            <Route path="/voicechat" element={<voicechat />} />
+
           </Routes>
         </ThemeProvider>
       </BrowserRouter>
