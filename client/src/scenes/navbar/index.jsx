@@ -12,14 +12,16 @@ import {
 } from "@mui/material";
 import {
   Search,
-  Message,
   DarkMode,
   LightMode,
-  Notifications,
   Help,
   Menu,
   Close,
+
 } from "@mui/icons-material";
+//import VoiceChatIcon from '@mui/icons-material/VoiceChat';
+import RecordVoiceOverIcon from '@mui/icons-material/RecordVoiceOver';
+import RememberMeIcon from '@mui/icons-material/RememberMe';
 import { useDispatch, useSelector } from "react-redux";
 import { setMode, setLogout } from "state";
 import { useNavigate } from "react-router-dom";
@@ -83,8 +85,12 @@ const Navbar = () => {
               <LightMode sx={{ color: dark, fontSize: "25px" }} />
             )}
           </IconButton>
-          <Message sx={{ fontSize: "25px" }} />
-          <Notifications sx={{ fontSize: "25px" }} />
+          <RememberMeIcon sx={{ fontSize: "25px" }}
+            onClick={() => navigate("/vrmodule")} />
+
+          <RecordVoiceOverIcon sx={{ fontSize: "25px" }}
+            onClick={() => navigate("/voicechat")} />
+
           <Help sx={{ fontSize: "25px" }} />
           <FormControl variant="standard" value={fullName}>
             <Select
@@ -158,8 +164,11 @@ const Navbar = () => {
                 <LightMode sx={{ color: dark, fontSize: "25px" }} />
               )}
             </IconButton>
-            <Message sx={{ fontSize: "25px" }} />
-            <Notifications sx={{ fontSize: "25px" }} />
+            <RememberMeIcon sx={{ fontSize: "25px" }}
+              onClick={() => navigate("/vrmodule")} />
+              
+            <RecordVoiceOverIcon sx={{ fontSize: "25px" }}
+              onClick={() => navigate("/voicechat")} />
             <Help sx={{ fontSize: "25px" }} />
             <FormControl variant="standard" value={fullName}>
               <Select
