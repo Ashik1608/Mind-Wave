@@ -86,7 +86,7 @@ const Navbar = () => {
             )}
           </IconButton>
           <RememberMeIcon sx={{ fontSize: "25px" }}
-            onClick={() => navigate("/vrmodule")} />
+            onClick={() => navigate("/counsellor")} />
 
           <RecordVoiceOverIcon sx={{ fontSize: "25px" }}
             onClick={() => navigate("/voicechat")} />
@@ -165,8 +165,8 @@ const Navbar = () => {
               )}
             </IconButton>
             <RememberMeIcon sx={{ fontSize: "25px" }}
-              onClick={() => navigate("/vrmodule")} />
-              
+              onClick={() => navigate("/counsellor")} />
+
             <RecordVoiceOverIcon sx={{ fontSize: "25px" }}
               onClick={() => navigate("/voicechat")} />
             <Help sx={{ fontSize: "25px" }} />
