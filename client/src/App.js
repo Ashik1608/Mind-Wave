@@ -3,7 +3,7 @@ import HomePage from "./scenes/homepage";
 import LoginPage from "./scenes/loginpage";
 import ProfilePage from "./scenes/profilepage";
 import VoiceChat from "./scenes/VoiceChat";
-import VrModule from "./scenes/VrModule";
+import Counsellor from "./scenes/Counsellor";
 import { useMemo } from "react";
 import { useSelector } from "react-redux";
 import { CssBaseline, ThemeProvider } from "@mui/material";
@@ -23,7 +23,7 @@ function App() {
             <Route path="/home" element={<HomePage />} />
             <Route path="/profile/:userId" element={<ProfilePage />} />
             <Route path="/voicechat" element={<VoiceChat />} />
-            <Route path="/vrmodule" element={<VrModule />} />
+            <Route path="/counsellor" element={<Counsellor />} />
           </Routes>
         </ThemeProvider>
       </BrowserRouter>
