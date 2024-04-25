@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./scenes/homepage";
 import LoginPage from "./scenes/loginpage";
 import ProfilePage from "./scenes/profilepage";
-import VoiceChat from "./scenes/VoiceChat";
+import VoiceChat from "./scenes/voicechat";
 import VrModule from "./scenes/VrModule";
 import { useMemo } from "react";
 import { useSelector } from "react-redux";
