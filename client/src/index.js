@@ -30,6 +30,7 @@ const store = configureStore({
     }),
 });
 //  sample change
+// Sample Change 2
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
